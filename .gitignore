@@ -97,3 +97,13 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+# Binary folder
+bin/
+
+# Personal data
+proposed_teams.csv
+people.json
+
+# PyCharm
+.idea/
