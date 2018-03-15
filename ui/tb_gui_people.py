@@ -125,6 +125,7 @@ class AddPersonDialog(QtWidgets.QDialog):
         self.config_state.person_placeholder.values['manager'] = self.manager_checkbox.isChecked()
         self.config_state.person_placeholder.values['participating'] = self.participating_checkbox.isChecked()
         self.config_state.person_placeholder.values['social_committee'] = self.social_committee_checkbox.isChecked()
+        self.config_state.person_placeholder.key = self.first_name_lineedit.text().replace(' ', '').replace('-', '') + self.last_name_lineedit.text().replace(' ', '')
 
         self.accept()
 

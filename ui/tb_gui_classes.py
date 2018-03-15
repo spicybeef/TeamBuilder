@@ -372,6 +372,9 @@ class ConfigState(QtCore.QObject):
                     participating = stats['participating'],
                     key = person,
                 )
+            # if we have a team, then add that too
+            if 'current_team' in stats:
+                new_person.values['current_team'] = stats['current_team']
 
                 self.people_model.insert_person(len(self.people_model.people), new_person)
 
